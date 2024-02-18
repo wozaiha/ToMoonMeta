@@ -1,17 +1,11 @@
 mod tests {
 
-    use crate::{control, helper};
+    
     use regex::Regex;
-    use serde_yaml::{Mapping, Number, Value};
-    use std::{
-        fs,
-        path::PathBuf,
-        process::{Command, Stdio},
-        thread,
-        time::Duration,
-    };
+    
+    
 
-    use sysinfo::{Pid, ProcessExt, System, SystemExt};
+    use sysinfo::{SystemExt};
 
     #[test]
     fn check_systemd_resolved() {}
