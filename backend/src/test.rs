@@ -112,7 +112,7 @@ mod tests {
         let test_yaml = "./Rules/IPfake.yaml";
         let r = Regex::new(r"^\./").unwrap();
         let result = r.replace(test_yaml, "");
-        let save_path = PathBuf::from("/root/.config/clash/").join(result.to_string());
+        let save_path = PathBuf::from("/etc/tomoon/").join(result.to_string());
         println!("Rule-Provider {} updated.", save_path.display());
     }
 
