@@ -1,7 +1,5 @@
 on:
-  push:
-    tags:        
-      - 'v*'           # Push events to every tag not containing /
+  workflow_dispatch:
 
 name:  ToMoon Auto Build
 
